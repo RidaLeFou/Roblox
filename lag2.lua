@@ -58,8 +58,8 @@ function launchThePolitelyDisruptiveDevice()
             spawn(function()
                 while task.wait(0.1) and player.Parent do
                     pcall(function()
-                        humanoidRootPart.CFrame = humanoidRootPart.CFrame * CFrame.Angles(0, math.rad(0.5), 0) -- Rotation infinitésimale mais répliquée
-                        character.Humanoid.WalkSpeed = math.random(1, 50) -- Ils deviennent fous.
+                        humanoidRootPart.CFrame = humanoidRootPart.CFrame * CFrame.Angles(0, math.rad(0.5), 0) 
+                        character.Humanoid.WalkSpeed = math.random(1, 50)
                     end)
                 end
             end)
